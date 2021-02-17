@@ -6,6 +6,132 @@
         <div class="index"> 
             <h1>Shopping list</h1> 
             <p>Select items to add to the shopping list.</p> 
+            <h2>Miscellaneous</h2>
+            <ul>
+                {% for item in misc %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Fruit/vegetables</h2>
+            <ul>
+                {% for item in fruitveg %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Meat</h2>
+            <ul>
+                {% for item in meat %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Bakery</h2>
+            <ul>
+                {% for item in bakery %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Lunch</h2>
+            <ul>
+                {% for item in lunch %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Dairy</h2>
+            <ul>
+                {% for item in dairy %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Ingredients/condiments</h2>
+            <ul>
+                {% for item in ingcond %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Tins</h2>
+            <ul>
+                {% for item in tins %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Breakfast</h2>
+            <ul>
+                {% for item in breakfast %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Desserts</h2>
+            <ul>
+                {% for item in desserts %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Household</h2>
+            <ul>
+                {% for item in household %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Frozen</h2>
+            <ul>
+                {% for item in frozen %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Snacks</h2>
+            <ul>
+                {% for item in snacks %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
+            <h2>Drinks</h2>
+            <ul>
+                {% for item in drinks %}
+                <label class="checkbox">
+                    {{item}}
+              <input type="checkbox" name="selections" value="{{ item }}"/>
+            </label>
+                {% endfor %}
+            </ul>
         </div>
         {% endblock %}
     </body> 
