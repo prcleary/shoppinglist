@@ -1,7 +1,8 @@
 FROM ubuntu:20.04
-COPY . /app
-WORKDIR /app
+RUN apt-get update -y && apt-get install -y python3-pip
+MAINTAINER "Paul Cleary" drprcleary@gmail.com
+COPY . /shoppinglist
+WORKDIR /shoppinglist/app
 RUN pip3 install -r requirements.txt
-EXPOSE 5001
 ENTRYPOINT [ "python3" ]
 CMD [ "shoppinglist.py" ]
