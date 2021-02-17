@@ -12,3 +12,6 @@ To run:
 docker run --name shoppinglist -d -p 5000:5000 shoppinglist:latest
 ```
 
+Demo: <https://shoppinglist.paulcleary.net/>
+
+
