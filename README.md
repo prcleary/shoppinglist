@@ -1,2 +1,2 @@
 # shoppinglist
-Shopping list to learn Flask and deployment using Docker
+Shopping list app to learn Flask and deployment using Docker
