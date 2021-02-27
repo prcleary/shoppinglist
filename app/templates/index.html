@@ -1,34 +1,39 @@
-        {% extends "layout.html" %} 
-        {% block content %}
-        <div class="index"> 
-            <input type=button class="rightbutton" value="Print this page" onClick="javascript:window.print()">
-            <p>Tick items to purchase.</p> 
-            <table>
-            <tr>
+{% extends "layout.html" %} 
+{% block content %}
+<div class="index"> 
+    <input type=button class="rightbutton" value="Print this page" onClick="javascript:window.print()">
+    <p>Tick items to purchase.</p> 
+    <table>
+        <tr>
             {% for key in listitems %}
             <th>
                 {{key}}
             </th>
             <td> 
                 {% for item in listitems[key] %} 
+                <nobr>
                 <input type="checkbox" id='{{item}}' name='{{item}}'> 
                 <label for='{{item}}'> 
                     {{item}} 
                 </label>
-            {% endfor %}
+                </nobr>
+                {% endfor %}
+                <div contenteditable>
+                    Other: 
+                </div>
             </td>
-            </tr>
-            {% endfor %}
-            <tr>
-                <th>
-                    Add your own here
-                </th> 
-                <td>
-                    <div contenteditable>
-                    </div>
-                </td>
-            </tr>
-            </table>
-        </div>
-        {% endblock %}
+        </tr>
+        {% endfor %}
+        <tr>
+            <th>
+                Add more here: 
+            </th> 
+            <td>
+                <div contenteditable>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
 
